@@ -16,6 +16,7 @@
                 <li><a href="#about">关于我</a></li>
                 <li><a href="#skills">技能</a></li>
                 <li><a href="#projects">项目</a></li>
+                <li><a href="#game">小游戏</a></li>
                 <li><a href="#contact">联系</a></li>
             </ul>
         </div>
@@ -26,10 +27,10 @@
         <div class="hero-content">
             <div class="avatar">Q</div>
             <h1>你好，我是 <span class="highlight">秋木</span></h1>
-            <p class="subtitle">编程学习者 · C 语言爱好者</p>
-            <p class="intro">热爱用代码解决问题，正在探索编程世界的每一种可能。</p>
+            <p class="subtitle">嵌入式方向学习者 · C 语言爱好者</p>
+            <p class="intro">研究嵌入式开发，让代码在真实的硬件上跑起来。希望与志同道合的朋友多多交流！</p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">查看项目</a>
+                <a href="#game" class="btn btn-primary">玩个小游戏</a>
                 <a href="#contact" class="btn btn-outline">联系我</a>
             </div>
         </div>
@@ -44,8 +45,8 @@
         <div class="about-content">
             <div class="about-text">
                 <p>你好！我是秋木，一名编程爱好者。我喜欢用代码把想法变成现实，享受每一次调试成功带来的成就感。</p>
-                <p>目前主要学习 <strong>C 语言</strong> 和 <strong>Win32 API</strong> 编程，使用 Dev-C++ 作为主要开发环境。从猜数字小游戏到更复杂的程序，每一个项目都让我对编程有了更深的理解。</p>
-                <p>我相信编程不仅是技术，更是一种思维方式。保持好奇，持续学习。</p>
+                <p>我目前的研究方向是<strong>嵌入式开发</strong>。我相信让代码运行在真实的硬件上——点亮一颗 LED、驱动一块屏幕、采集一路传感器数据——是编程最有魅力的部分。</p>
+                <p>平时主要使用 <strong>C 语言</strong> 进行开发，从底层的指针、内存操作到上层的应用逻辑都有涉猎。也希望结识更多同样喜欢嵌入式、喜欢动手折腾硬件的朋友，一起交流学习！</p>
             </div>
             <div class="about-stats">
                 <div class="stat">
@@ -69,9 +70,15 @@
         <h2 class="section-title">技能</h2>
         <div class="skills-grid">
             <div class="skill-card">
+                <div class="skill-icon">⚡</div>
+                <h3>嵌入式开发</h3>
+                <p>研究方向：单片机编程、GPIO/定时器/串口等外设驱动，让代码在硬件上跑起来。</p>
+                <div class="skill-bar"><div class="skill-fill" style="width: 55%"></div></div>
+            </div>
+            <div class="skill-card">
                 <div class="skill-icon">💻</div>
                 <h3>C 语言</h3>
-                <p>熟练使用标准 C 库进行程序开发，理解指针、内存管理等核心概念。</p>
+                <p>嵌入式开发的主力语言，理解指针、内存管理、位操作等核心概念。</p>
                 <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
             </div>
             <div class="skill-card">
@@ -79,12 +86,6 @@
                 <h3>Win32 API</h3>
                 <p>使用 Windows API 进行桌面应用开发，熟悉窗口过程与消息机制。</p>
                 <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">🛠️</div>
-                <h3>Dev-C++</h3>
-                <p>主要开发环境，能够独立完成编译、调试与运行。</p>
-                <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
             </div>
             <div class="skill-card">
                 <div class="skill-icon">🐙</div>
@@ -111,6 +112,17 @@
                 <a href="https://github.com/qiu99andl/Qiu-s-lumber-storage-area" target="_blank" class="project-link">查看源码 →</a>
             </div>
             <div class="project-card">
+                <div class="project-thumb">🕹️</div>
+                <h3>网页版猜数字</h3>
+                <p>上面那个 Python 小游戏的网页版！用 JavaScript 重写，在本页"小游戏"板块就能直接玩。</p>
+                <div class="project-tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">互动</span>
+                    <span class="tag">网页游戏</span>
+                </div>
+                <a href="#game" class="project-link">去玩一下 →</a>
+            </div>
+            <div class="project-card">
                 <div class="project-thumb">🌐</div>
                 <h3>个人主页</h3>
                 <p>你正在浏览的这个页面！使用纯 HTML + CSS 构建，部署在 GitHub Pages 上。</p>
@@ -124,11 +136,31 @@
         </div>
     </section>
 
+    <!-- 互动小游戏 -->
+    <section id="game" class="section">
+        <h2 class="section-title">互动小游戏 · 猜数字</h2>
+        <div class="game-wrap">
+            <div class="game-card">
+                <p class="game-desc">我心里想了一个 <strong>1 ~ 100</strong> 之间的整数，猜猜看是多少？每次猜完我会提示你"大了"还是"小了"，看看你最少能几次猜中！</p>
+                <div class="game-row">
+                    <input type="number" id="guess-input" min="1" max="100" placeholder="输入 1~100 的数字">
+                    <button id="guess-btn" class="btn btn-primary">猜！</button>
+                    <button id="restart-btn" class="btn btn-outline" hidden>再来一局</button>
+                </div>
+                <div id="game-msg" class="game-msg">点击"猜！"开始挑战～</div>
+                <div class="game-meta">
+                    <span>已猜次数：<strong id="game-count">0</strong></span>
+                    <span>最佳纪录：<strong id="game-best">--</strong></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- 联系 -->
     <section id="contact" class="section section-alt">
         <h2 class="section-title">联系我</h2>
         <div class="contact-content">
-            <p>欢迎通过以下方式联系我，一起交流编程心得！</p>
+            <p>如果你也喜欢嵌入式开发，或者对页面上的小游戏有任何想法，欢迎来交流！</p>
             <div class="contact-links">
                 <a href="https://github.com/qiu99andl" target="_blank" class="contact-card">
                     <span class="contact-icon">🐙</span>
@@ -143,5 +175,6 @@
     <footer class="footer">
         <p>&copy; 2026 秋木. Made with ❤️ and hosted on GitHub Pages.</p>
     </footer>
+    <script src="game.js"></script>
 </body>
 </html>
