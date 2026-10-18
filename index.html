@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>秋木 | 个人主页</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">秋木</a>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首页 Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="avatar">Q</div>
+            <h1>你好，我是 <span class="highlight">秋木</span></h1>
+            <p class="subtitle">编程学习者 · C 语言爱好者</p>
+            <p class="intro">热爱用代码解决问题，正在探索编程世界的每一种可能。</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">查看项目</a>
+                <a href="#contact" class="btn btn-outline">联系我</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="section">
+        <h2 class="section-title">关于我</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>你好！我是秋木，一名编程爱好者。我喜欢用代码把想法变成现实，享受每一次调试成功带来的成就感。</p>
+                <p>目前主要学习 <strong>C 语言</strong> 和 <strong>Win32 API</strong> 编程，使用 Dev-C++ 作为主要开发环境。从猜数字小游戏到更复杂的程序，每一个项目都让我对编程有了更深的理解。</p>
+                <p>我相信编程不仅是技术，更是一种思维方式。保持好奇，持续学习。</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat">
+                    <div class="stat-number">1+</div>
+                    <div class="stat-label">已完成项目</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">C</div>
+                    <div class="stat-label">主力语言</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">学习热情</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能 -->
+    <section id="skills" class="section section-alt">
+        <h2 class="section-title">技能</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">💻</div>
+                <h3>C 语言</h3>
+                <p>熟练使用标准 C 库进行程序开发，理解指针、内存管理等核心概念。</p>
+                <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🪟</div>
+                <h3>Win32 API</h3>
+                <p>使用 Windows API 进行桌面应用开发，熟悉窗口过程与消息机制。</p>
+                <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🛠️</div>
+                <h3>Dev-C++</h3>
+                <p>主要开发环境，能够独立完成编译、调试与运行。</p>
+                <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🐙</div>
+                <h3>Git / GitHub</h3>
+                <p>掌握版本控制基本操作，能够使用 Git 管理项目并推送至 GitHub。</p>
+                <div class="skill-bar"><div class="skill-fill" style="width: 65%"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目 -->
+    <section id="projects" class="section">
+        <h2 class="section-title">项目作品</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-thumb">🎮</div>
+                <h3>猜数字小游戏</h3>
+                <p>电脑随机生成 1-100 的数字，玩家通过"大了/小了"提示猜中答案，并统计猜测次数。</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">CLI</span>
+                    <span class="tag">游戏</span>
+                </div>
+                <a href="https://github.com/qiu99andl/Qiu-s-lumber-storage-area" target="_blank" class="project-link">查看源码 →</a>
+            </div>
+            <div class="project-card">
+                <div class="project-thumb">🌐</div>
+                <h3>个人主页</h3>
+                <p>你正在浏览的这个页面！使用纯 HTML + CSS 构建，部署在 GitHub Pages 上。</p>
+                <div class="project-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">GitHub Pages</span>
+                </div>
+                <a href="#" class="project-link">查看源码 →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系 -->
+    <section id="contact" class="section section-alt">
+        <h2 class="section-title">联系我</h2>
+        <div class="contact-content">
+            <p>欢迎通过以下方式联系我，一起交流编程心得！</p>
+            <div class="contact-links">
+                <a href="https://github.com/qiu99andl" target="_blank" class="contact-card">
+                    <span class="contact-icon">🐙</span>
+                    <span>GitHub</span>
+                    <span class="contact-handle">@qiu99andl</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <p>&copy; 2026 秋木. Made with ❤️ and hosted on GitHub Pages.</p>
+    </footer>
+</body>
+</html>
